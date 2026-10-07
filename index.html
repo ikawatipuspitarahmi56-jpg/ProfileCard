@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card - Ikawati Rahmi Puspita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card-container">
+        <header class="card-header">
+            <div class="status-badge">
+                <span class="pulse-dot"></span> Open for Collaborations
+            </div>
+        </header>
+
+        <section class="profile-section">
+            <div class="avatar-wrapper">
+                <img src="profil.jpg" alt="Ikawati Rahmi" class="avatar-img">
+                <span class="role-tag"><i class="fa-solid fa-code"></i></span>
+            </div>
+
+            <div class="user-identity">
+                <h2>Ikawati Rahmi Puspita <i class="fa-solid fa-circle-check verified-icon"></i></h2>
+                <p class="user-handle">@_ikawpuspitaarahmiy_ • X RPL 1</p>
+                <p class="user-bio">
+                    Hai! Aku Ika, siswi RPL SMK Taruna Bhakti yang hobi ngoding serta eksplorasi UI/UX design dan web development. Selain gemar mengulik kode, aku juga sosok ekstrovert yang berani keluar dari zona nyaman, serta rajin membangun koneksi dengan teman-teman di komunitas aku dari beberapa brand skincare yang berkolaborasi denganku!
+                </p>
+            </div>
+
+            <nav class="card-tabs">
+                <button class="tab-btn active" onclick="switchTab('about', event)"><i class="fa-solid fa-user"></i> About</button>
+                <button class="tab-btn" onclick="switchTab('skills', event)"><i class="fa-solid fa-layer-group"></i> Skills</button>
+                <button class="tab-btn" onclick="switchTab('projects', event)"><i class="fa-solid fa-laptop-code"></i> Work</button>
+            </nav>
+
+            <div class="tab-content">
+                <div id="tab-about" class="tab-pane active">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Sekolah</span>
+                            <span class="info-val">SMK Taruna Bhakti</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Jurusan</span>
+                            <span class="info-val">Rekayasa Perangkat Lunak</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Fokus</span>
+                            <span class="info-val">UI/UX &amp; Web Dev</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Aktivitas</span>
+                            <span class="info-val">Sekolah &amp; Content Creator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab-skills" class="tab-pane">
+                    <div class="skills-tags">
+                        <span class="tag"><i class="fa-brands fa-figma"></i> Figma Wireframing</span>
+                        <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="tag"><i class="fa-brands fa-python"></i> Python Basic</span>
+                        <span class="tag"><i class="fa-solid fa-brain"></i> Adaptability &amp; Mental Toughness</span>
+                        <span class="tag"><i class="fa-solid fa-comments"></i> Public Speaking &amp; Communication</span>
+                        <span class="tag"><i class="fa-solid fa-bullhorn"></i> Personal Branding &amp; Positioning</span>
+                    </div>
+                </div>
+
+                <div id="tab-projects" class="tab-pane">
+                    <div class="project-mini-list">
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-list-check"></i></div>
+                            <div class="project-meta">
+                                <strong>To-Do-List App</strong>
+                                <span>Task Management Web App</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-utensils"></i></div>
+                            <div class="project-meta">
+                                <strong>Aplikasi Pemesanan Makanan</strong>
+                                <span>Food Ordering Web App</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-calculator"></i></div>
+                            <div class="project-meta">
+                                <strong>Kalkulator</strong>
+                                <span>Interactive Web Calculator</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-quote-left"></i></div>
+                            <div class="project-meta">
+                                <strong>Random Quote Generator</strong>
+                                <span>JavaScript Quote App</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                            <div class="project-meta">
+                                <strong>Unfolify App</strong>
+                                <span>Wireframe &amp; User Flow Figma</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-square-poll-vertical"></i></div>
+                            <div class="project-meta">
+                                <strong>Aplikasi Cek Nilai Siswa</strong>
+                                <span>Web-based Evaluator</span>
+                            </div>
+                        </div>
+                        <div class="project-item">
+                            <div class="project-icon"><i class="fa-solid fa-id-card"></i></div>
+                            <div class="project-meta">
+                                <strong>Profile Card Web</strong>
+                                <span>Interactive Profile Component</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-footer">
+                <div class="social-row">
+                    <a href="https://www.instagram.com/_iikkhaaaaa__?stkn=bnE3Ynlid3NyZXN1" target="_blank" class="social-btn" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/ikawatipuspitarahmi56-jpg" target="_blank" class="social-btn" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.figma.com/files/team/1683677861634727977/user/1683677860079343436?fuid=1683677860079343436" target="_blank" class="social-btn" title="Figma">
+                        <i class="fa-brands fa-figma"></i>
+                    </a>
+                    <button class="social-btn" id="shareBtn" title="Share Profile">
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </button>
+                </div>
+
+                <a href="https://t.me/KinderjOooOuyy" target="_blank" class="primary-btn">
+                    <span>Hubungi Saya</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast" class="toast">Link profil berhasil disalin! 📋</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
